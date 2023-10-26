@@ -77,3 +77,60 @@ span{
     font-size: 120%;
     text-shadow: 1px 1px white;
 }
+.finalwindow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 1px 1px 5px 5px rgb(53, 52, 52);
+    border-radius: 50px;
+}
+.finalwindow h2{
+    margin: 0 auto;
+    width: 350px;
+    height: 50px;
+    background: rgb(3, 189, 130);
+    padding: 5px 10px;
+    border: #202020 5px solid;
+    border-radius: 20px;
+}
+
+img{
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #202020;
+    border-radius: 20px;
+}
+button{
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+#playAgain{
+    font-size: 150%;
+    text-decoration: none;
+    font-weight: 1000;
+    margin: 0 auto;
+    background: rgb(3, 189, 130);
+    padding: 5px 10px;
+    border: #202020 2px solid;
+    border-radius: 20px;
+    transition: ease;
+}
+#playAgain:hover{
+    transform: scale(1.04);
+    transition: .2s;
+    box-shadow: 4px 3px #202020;
+}
+
+.finalwindow h2.tie{
+    width: 250px;
+    height: 50px;
+    background: rgb(3, 189, 130);
+    padding: 5px 25px;
+    border: #202020 5px solid;
+    border-radius: 20px;
+}
