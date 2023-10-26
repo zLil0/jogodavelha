@@ -12,10 +12,14 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 .space{
+    cursor: pointer;
     background: transparent;
     width: 100px;
     height: 100px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 table{
     border: 1px solid black;
@@ -65,4 +69,11 @@ table{
     padding: 5px 20px;
     border: #202020 5px solid;
     border-radius: 20px;
+}
+h3{
+    font-size: 750%;
+}
+span{
+    font-size: 120%;
+    text-shadow: 1px 1px white;
 }
