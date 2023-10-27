@@ -221,7 +221,7 @@ const winner = () => {
         final.innerHTML =`
         <div class="finalwindow">
             <h2>Jogador com <span>X</span> ganhou!!</h2>
-            <img src="https://media.tenor.com/P8VsDwHZreYAAAAM/tobey-maguire-spider-man.gif" alt="tobey-maguire-spider-man">
+            <img src="img/tobey-maguire-spider-man.gif" alt="tobey-maguire-spider-man">
             <button id="playAgain" onclick="window.location.reload()">Jogar novamente</button>
         </div>`
     }
@@ -230,7 +230,7 @@ const winner = () => {
          final.innerHTML =`
          <div class="finalwindow">
             <h2>Jogador com <span>O</span> ganhou!!</h2>
-            <img src="https://media.tenor.com/P8VsDwHZreYAAAAM/tobey-maguire-spider-man.gif" alt="tobey-maguire-spider-man">
+            <img src="img/tobey-maguire-spider-man.gif" alt="tobey-maguire-spider-man">
             <button id="playAgain" onclick="window.location.reload()">Jogar novamente</button>
          </div>`
     }
@@ -239,7 +239,7 @@ const winner = () => {
          final.innerHTML =`
          <div class="finalwindow">
             <h2 class="tie">Deu <span>Velha</span>!!!</h2>
-            <img src="https://www.alleyclub.com.br/wp-content/uploads/2016/07/dentadura-faminta.gif" alt="tobey-maguire-spider-man">
+            <img src="img/velha.gif" alt="tobey-maguire-spider-man">
             <button id="playAgain" onclick="window.location.reload()">Jogar novamente</button>
          </div>`
     }

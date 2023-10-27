@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <h1 class="nav">Jogos</h1>
+            <ul>
+                <li><a href="index.html">Jogo da velha 1</a></li>
+                <li><a href="game2.html" class="active">Jogo da velha 2</a></li>
+                <li><a href="">Jogo da velha 3</a></li>
+            </ul>
+        </div>
+        <div class="game g2" id="game">
+            <h1 id="text">Vez de <span id="turn">X</span><span id="nextstep"></span></h1>
+            <div class="board" id="board">
+                <div class="space" id="mainA1">
+                    <div class="space2" id="oneA1" onclick="clickone(); marka1()"> </div>
+                    <div class="space2" id="oneB1" onclick="clickone(); markb1()"> </div> 
+                    <div class="space2" id="oneC1" onclick="clickone(); markc1()"> </div>
+                    <div class="space2" id="oneA2" onclick="clickone(); marka2()"> </div>
+                    <div class="space2 center2" id="oneB2" onclick="clickone(); markb2()"> </div>
+                    <div class="space2" id="oneC2" onclick="clickone(); markc2()"> </div>
+                    <div class="space2" id="oneA3" onclick="clickone(); marka3()"> </div>
+                    <div class="space2" id="oneB3" onclick="clickone(); markb3()"> </div>
+                    <div class="space2" id="oneC3" onclick="clickone(); markc3()"> </div>
+                </div>
+                <div class="space" id="mainB1">
+                    <div class="space2" id="twoA1" onclick="clicktwo(); marka1()"> </div>
+                    <div class="space2" id="twoB1" onclick="clicktwo(); markb1()"> </div> 
+                    <div class="space2" id="twoC1" onclick="clicktwo(); markc1()"> </div>
+                    <div class="space2" id="twoA2" onclick="clicktwo(); marka2()"> </div>
+                    <div class="space2 center2" id="twoB2" onclick="clicktwo(); markb2()"> </div>
+                    <div class="space2" id="twoC2" onclick="clicktwo(); markc2()"> </div>
+                    <div class="space2" id="twoA3" onclick="clicktwo(); marka3()"> </div>
+                    <div class="space2" id="twoB3" onclick="clicktwo(); markb3()"> </div>
+                    <div class="space2" id="twoC3" onclick="clicktwo(); markc3()"> </div>
+                </div>
+                <div id="boardC1">
+                    <div class="space" id="mainC1">
+                        <div class="space2" id="threeA1" onclick="clickthree(); marka1()"> </div>
+                        <div class="space2" id="threeB1" onclick="clickthree(); markb1()"> </div> 
+                        <div class="space2" id="threeC1" onclick="clickthree(); markc1()"> </div>
+                        <div class="space2" id="threeA2" onclick="clickthree(); marka2()"> </div>
+                        <div class="space2 center2" id="threeB2" onclick="clickthree(); markb2()"> </div>
+                        <div class="space2" id="threeC2" onclick="clickthree(); markc2()"> </div>
+                        <div class="space2" id="threeA3" onclick="clickthree(); marka3()"> </div>
+                        <div class="space2" id="threeB3" onclick="clickthree(); markb3()"> </div>
+                        <div class="space2" id="threeC3" onclick="clickthree(); markc3()"> </div>
+                    </div>
+                </div>
+                <div class="space" id="mainA2">
+                    <div class="space2" id="fourA1" onclick="clickfour(); marka1()"> </div>
+                    <div class="space2" id="fourB1" onclick="clickfour(); markb1()"> </div> 
+                    <div class="space2" id="fourC1" onclick="clickfour(); markc1()"> </div>
+                    <div class="space2" id="fourA2" onclick="clickfour(); marka2()"> </div>
+                    <div class="space2 center2" id="fourB2" onclick="clickfour(); markb2()"> </div>
+                    <div class="space2" id="fourC2" onclick="clickfour(); markc2()"> </div>
+                    <div class="space2" id="fourA3" onclick="clickfour(); marka3()"> </div>
+                    <div class="space2" id="fourB3" onclick="clickfour(); markb3()"> </div>
+                    <div class="space2" id="fourC3" onclick="clickfour(); markc3()"> </div>
+                </div>
+                <div class="space center" id="mainB2">
+                    <div class="space2" id="fiveA1" onclick="clickfive(); marka1()"> </div>
+                    <div class="space2" id="fiveB1" onclick="clickfive(); markb1()"> </div> 
+                    <div class="space2" id="fiveC1" onclick="clickfive(); markc1()"> </div>
+                    <div class="space2" id="fiveA2" onclick="clickfive(); marka2()"> </div>
+                    <div class="space2 center2" id="fiveB2" onclick="clickfive(); markb2()"> </div>
+                    <div class="space2" id="fiveC2" onclick="clickfive(); markc2()"> </div>
+                    <div class="space2" id="fiveA3" onclick="clickfive(); marka3()"> </div>
+                    <div class="space2" id="fiveB3" onclick="clickfive(); markb3()"> </div>
+                    <div class="space2" id="fiveC3" onclick="clickfive(); markc3()"> </div>
+                </div>
+                <div class="space" id="mainC2">
+                    <div class="space2" id="sixA1" onclick="clicksix(); marka1()"> </div>
+                    <div class="space2" id="sixB1" onclick="clicksix(); markb1()"> </div> 
+                    <div class="space2" id="sixC1" onclick="clicksix(); markc1()"> </div>
+                    <div class="space2" id="sixA2" onclick="clicksix(); marka2()"> </div>
+                    <div class="space2 center2" id="sixB2" onclick="clicksix(); markb2()"> </div>
+                    <div class="space2" id="sixC2" onclick="clicksix(); markc2()"> </div>
+                    <div class="space2" id="sixA3" onclick="clicksix(); marka3()"> </div>
+                    <div class="space2" id="sixB3" onclick="clicksix(); markb3()"> </div>
+                    <div class="space2" id="sixC3" onclick="clicksix(); markc3()"> </div>
+                </div>
+                <div class="space" id="mainA3">
+                    <div class="space2" id="sevenA1" onclick="clickseven(); marka1()"> </div>
+                    <div class="space2" id="sevenB1" onclick="clickseven(); markb1()"> </div> 
+                    <div class="space2" id="sevenC1" onclick="clickseven(); markc1()"> </div>
+                    <div class="space2" id="sevenA2" onclick="clickseven(); marka2()"> </div>
+                    <div class="space2 center2" id="sevenB2" onclick="clickseven(); markb2()"> </div>
+                    <div class="space2" id="sevenC2" onclick="clickseven(); markc2()"> </div>
+                    <div class="space2" id="sevenA3" onclick="clickseven(); marka3()"> </div>
+                    <div class="space2" id="sevenB3" onclick="clickseven(); markb3()"> </div>
+                    <div class="space2" id="sevenC3" onclick="clickseven(); markc3()"> </div>
+                </div>
+                <div class="space" id="mainB3">
+                    <div class="space2" id="eightA1" onclick="clickeight(); marka1()"> </div>
+                    <div class="space2" id="eightB1" onclick="clickeight(); markb1()"> </div> 
+                    <div class="space2" id="eightC1" onclick="clickeight(); markc1()"> </div>
+                    <div class="space2" id="eightA2" onclick="clickeight(); marka2()"> </div>
+                    <div class="space2 center2" id="eightB2" onclick="clickeight(); markb2()"> </div>
+                    <div class="space2" id="eightC2" onclick="clickeight(); markc2()"> </div>
+                    <div class="space2" id="eightA3" onclick="clickeight(); marka3()"> </div>
+                    <div class="space2" id="eightB3" onclick="clickeight(); markb3()"> </div>
+                    <div class="space2" id="eightC3" onclick="clickeight(); markc3()"> </div>
+                </div>
+                <div class="space" id="mainC3">
+                    <div class="space2" id="nineA1" onclick="clicknine(); marka1()"> </div>
+                    <div class="space2" id="nineB1" onclick="clicknine(); markb1()"> </div> 
+                    <div class="space2" id="nineB1" onclick="clicknine(); markc1()"> </div>
+                    <div class="space2" id="nineA2" onclick="clicknine(); marka2()"> </div>
+                    <div class="space2 center2" id="nineB2" onclick="clicknine(); markb2()"> </div>
+                    <div class="space2" id="nineC2" onclick="clicknine(); markc2()"> </div>
+                    <div class="space2" id="nineA3" onclick="clicknine(); marka3()"> </div>
+                    <div class="space2" id="nineB3" onclick="clicknine(); markb3()"> </div>
+                    <div class="space2" id="nineC3" onclick="clicknine(); markc3()"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/game2.js"></script>
+</body>
+</html>
