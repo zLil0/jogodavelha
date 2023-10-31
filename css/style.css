@@ -164,11 +164,11 @@ ul li a::after {
     left: 0;
     bottom: -3px;
     border-radius: 2px;
-    transition: ease;
+    transition: .3s ease;
     transform: scale(0);
 }
 ul li a:hover::after{
-    transition: .3s;
+    transition: .3s ease;
     transform: scaleX(1);
 }
 
@@ -205,11 +205,12 @@ ul li a.active::after{
     flex-wrap: wrap;
     gap: 6px;
     padding: 14px;
-    transition: ease;
+    transform: scale(1);
+    transition: .3s;
 }
 .g2 .space:hover{
     transform: scale(3);
-    transition: .3s;
+    transition: .3s ease;
     background: #e5e5e5;
     border: #202020 1px solid;
     padding: 12px;
